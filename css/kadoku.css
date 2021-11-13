@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* 全体 */
+
+	h1  {
+        font-size: 28px; color:#ffffff; background-color:#d31177; font-weight:bold; padding:5px 10px 3px 10px;margin: 0 0 5px 0;
+    }
+
+	h2	{
+        font-size: 24px; padding:0 0 0 10px;margin:2px 0 3px 0; border-left:solid 10px #7cbac1;
+    }
+
+	h3	{
+        font-size: 20px; font-weight:bold;margin: 1em 0 0 0;
+    }
+
+	p	{
+        font-size: 18px
+    }
+
+	div    {
+        font-size: 18px
+    }
+
+	textarea  {
+        font-size: 1em;
+    }
+
+	.large  {
+        font-size: 1.2em; margin:3px 0 0 3px;
+    }
+
+	.medium {
+        font-size: 0.9em;
+    }
+
+	.stress {
+        font-size: 40px; font-weight:bold; background-color:#ffdab9; 
+    }
+
+	form {
+        padding:0 0 0 10px; margin:0 ;
+    }
+
+	table {
+        border: 1px #000000 solid; border-collapse: collapse; margin-left: 10px;	
+    }
+
+	table caption {
+        text-align: left;
+    }
+
+	table .topline {
+        background: #5780f0;
+    }
+
+	table td.No {
+         border: none; table-layout: fixed; text-align:center;
+        }
+
+	table td.cate {
+        	border: 1px #000000 solid; table-layout: fixed; text-align:center;
+        }
+
+	table td.tranWD {
+        font-size: 0.5em; text-align:center ;background:#ffffff; table-layout: fixed;
+    }	/* word-break:break-all;}  *//* break-all:容赦なく折り返し */
+
+	table td.source {
+         text-align:center; background: #e0ffff; table-layout: fixed;vertical-align:bottom
+        }		/* nowrap:折り返さない        */
+
+	table td.pinyin {
+         font-size: 0.6em; text-align:center; background: #ffffff; table-layout: fixed; vertical-align:middle;
+					  padding: 0 2px 0 2px
+    }		/* nowrap:折り返さない        */
+	/*	table tr.source_row { line-height: 200%}	*/	/*	white-space:nowrap;	 ; text-align: left;  background: #7ce0ff; */
+	/*	table tr.pinyin_row { line-height: 100%}	*/	/*	white-space:nowrap;	 ; text-align: left;  background: #7ce0ff; */
+	
+    table tr.source_only_row {
+        text-align:center ;background:#ffffff; table-layout: fixed;line-height: 230%;
+    }
+
+	table tr.source_not_Chinese_row {
+        background:#e2dddd; line-height: 160%;
+    }
+
+	table td.source_not_Chinese {
+        text-align:left; background:#e2dddd; padding-left:5px;
+    }
+
+	table .tranST_row {
+         border: 1px #000000 solid; border-width: 1px 1px 3px 1px; table-layout: fixed; background: #fdf5e6; line-height: 190%; 
+    }
+
+	table .tranST_row td.No {
+         border-top:none 
+    }
+	table .tranST_row td.tranST {
+        padding-left:5px
+    }
+
+	table a {
+        text-decoration:none; color:#000000;
+    }
+	/*
+	table tr.source_row td {padding: 15px 0px 0px 0px;}
+	table tr.tranST_row { padding: 0px 2px 0px 5px; background: #ffffee;}
+	table td { padding: 2px 0px; border-collapse: collapse; word-wrap:break-word;}
+	*/
+	table .dict_select {
+        border: 1px #000000 solid; border-collapse: collapse; margin-left: 10px; line-height: 150%; font-size: 0.8em; vertical-align:middle
+    }
+
+	#dict_select {
+         font-weight:bold; padding:2px; background-color: blanchedalmond;
+        }
+
+	[data-ruby] {
+         position: relative; color: #ff00ff;
+    }		/* 下段（簡体字）の修飾 */
+
+	[data-ruby]::before {
+        color: #0000ff; content: attr(data-ruby); white-space: nowrap; position: absolute;
+						top: -1.5em; font-size: 1em; font-weight:normal; 
+    }		/* 上段（漢字）の修飾 */
+
+
+	@media (min-width:1024px){
+		.container {box-sizing:border-box; width:1024px; margin:  0 auto;}
+	}
+	@media (max-width:1023px){
+		.container {box-sizing:border-box; width:100%; margin:  0 auto;}
+	}
+
+	/* End */

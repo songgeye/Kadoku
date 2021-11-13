@@ -1,0 +1,187 @@
+<html><head>
+    <title>誰でも中国語が読めるアプリ「華読」</title>
+    <meta name="keywords" content="中国語,中国文,簡体字,繁体字,アプリ">
+    <meta name="description" content="特長①「簡体字、繁体字」に対応する「漢字」を表示、②文の意味と併せて単語の意味を表示、③発音記号（Pinyin）も付加、④ワンタッチで外部辞書検索、⑤Webアプリなのでインストール不要。Windosw/Mac/iPhone/Androidで利用可、⑥無料">
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="js/jquery-3.3.1.min.js"></script>    <!-- jqueryファイルは、jsファイルより先に記述要 -->
+    <script type="text/javascript" src="kadoku/kadoku.js" charset="UTF-8"></script>
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">  -->
+    <!-- <link rel="stylesheet" href="css/style.css">  -->
+    <!-- <link rel="stylesheet" href="kadoku/kadoku.css">  --> <!-- 指定が重複する場合は、後者優先です -->
+    <link rel="icon" href="img/kadoku_favicon.ico">
+    <script>	//Google Analytics取得用
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-62782885-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <!--<h1>誰でも中国語が読めるアプリ「華読」</h1>-->
+        <script type="text/javascript" charset="UTF-8">
+            kadoku_start();
+        </script>
+
+        <script type="text/javascript" src="rakutenma/rakutenma.js" charset="UTF-8">
+        </script>
+
+        <script type="text/javascript" src="rakutenma/model_ja.js" charset="UTF-8">
+        </script>
+
+        <script type="text/javascript" src="rakutenma/model_zh.js" charset="UTF-8">
+        </script>
+
+        <script type="text/javascript" src="rakutenma/zh_chardic.js" charset="UTF-8">
+        </script>
+
+        <script type="text/javascript" src="rakutenma/hanzenkaku.js" charset="UTF-8">
+        </script>
+
+        <script src="js/jquery-3.3.1.min.js">
+        </script>
+
+            <!-- jqueryファイルは、jsファイルより先に記述要 -->
+            <script type="text/javascript" src="kadoku/kadoku.js" charset="UTF-8">
+            </script>
+
+            <script src="js/jquery-3.3.1.min.js">
+            </script>
+
+        <link rel="stylesheet" href="css/kadoku.css">
+            <div class="container">
+                <p class="medium">
+                    <a href="china.html" target="_blank">ITで中国語の壁を劇的に低くするポータル
+                    </a>
+                </p>
+                <h1>誰でも中国語が読めるアプリ「華読」v0.1</h1>
+                <p class="medium">
+                    　<a href="https://kadoku.broaderworld.jp/" target="_blank">概要紹介</a>
+                    　　　<a href="kadoku/howtoHome.pdf" target="_blank">スマホのホーム画面への追加方法</a>
+                </p>
+                <h2 id="tran_input">入力</h2>
+                <p class="large">
+                    <b>下欄に変換したい中国語の文章を入力し、[変換]ボタンをクリックして下さい。</b>
+                </p>
+                <p class="medium">
+                    　※
+                    <b>個人</b>
+                    情報や
+                    <b>秘密</b>
+                    情報は入力しないで下さい
+                    <br>
+                    　※字数制限：350字　（350字を超える部分は入力できません）
+                    <br>　
+                    　※画像（
+                    <img src="img/mark_smile.png">
+                    , 
+                    <img src="img/mark_heart.png">
+                     など）は削除して下さい。変換できません。
+                </p>
+                <b>
+                    <form id="cj_jc_select" name="cj_jc">
+                        入 力 言 語：
+                        <label>
+                            <input type="radio" id="auto" name="jccj_selector" value="auto" checked="">
+                            自動判定　
+                        </label>
+                        
+                        <label>
+                            <input type="radio" id="c2j" name="jccj_selector" value="c2j">
+                            中国語　
+                        </label>
+                        
+                        <label>
+                            <input type="radio" id="j2c2j" name="jccj_selector" value="j2c2j">
+                            日本語
+                        </label>
+                    
+                    </form>
+                
+                </b>
+                <div class="medium">
+                    　※"日本語"を選ぶと、全文を一旦Google翻訳で中国語にしてから変換します。
+                    <br>
+                    　※"自動判定"は、最初の20文字中にひらがな・カタカナがあった場合に"日本語"と判定します
+                </div>
+
+                <b>
+                    <form id="kanhan_select" name="kanhan">
+                        入力文字種：
+                        <label>
+                            <input type="radio" id="kan" name="kanhan_selector" value="kantaiji" checked="">
+                            簡体字　　
+                        </label>
+                        <label><input type="radio" id="han" name="kanhan_selector" value="hantaiji">
+                            繁体字
+                        </label>
+                    </form>
+                </b>
+
+                <b>
+
+                </b>
+                <form id="contrast_select" name="contrast">
+                    
+                    <b>対照文字種：
+                        <label><input type="radio" id="cont_kanji" name="contrast_selector" value="cont_kanji" checked="">
+                            日本漢字　
+                        </label>
+                        
+                        <label><input type="radio" id="cont_hankan" name="contrast_selector" value="cont_hankan">
+                            繁/簡体字
+                        </label>
+                    </b>
+                    <small>
+                        　←「入力文字種」の逆が選ばれます
+                    </small>
+                </form>
+                <textarea id="input" cols="80" rows="10">
+                </textarea>
+                <br>
+                <input type="submit" class="medium" value=" 　変 換　 " onclick="execute()">
+                　<input type="submit" class="medium" value="消去" onclick="clear_input()">
+                <p>
+                </p>
+                <h2>サンプル文章</h2>
+                下の文章を試しに変換してみて下さい。
+                <br>
+                <p class="medium">
+                    <table class="medium" width="640">
+                        <caption>
+                            <b>簡体字（主な使用地域：中国本土、シンガポール、マレーシア）
+                            </b>
+                        </caption>
+                        <tbody>
+                            <tr><td>美国总统特朗普此前多次在白宫发布会上推荐羟氯喹药物，引发了大量争议。《华盛顿邮报》报道称，美国退伍军人事务部4月21日发表的一项研究发现，服用羟氯喹药物的新冠病毒感染患者比未服用该药的患者更有可能死亡。FDA的另一项警告说，医生不应该让新冠病毒感染患者在医院外使用该药物，因为该药物可能会导致严重的心律问题。</td></tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table class="medium" width="640">
+                        <caption>
+                            <b>繁体字（主な使用地域：台湾、香港、マカオ）
+                            </b>
+                        </caption>
+                        <tbody>
+                            <tr><td>「聯合新聞網」報導，台大擬規劃成立不分系學系，以校內轉系方式招收大二生，約有10個名額，最快111學年度(2022年)上路。<br>台大教務長丁詩同今天(25日)接受中央社電訪表示，不分系的規劃，目前還在「討論可能性」的階段，未來如果可行，會到教務會議討論，再呈報教育部核准。</td></tr>
+                        </tbody></table><br><table class="medium" width="640">
+                        <caption>
+                            <b>日本語（最初にGoogle翻訳で中国語にした上で変換します）
+                            </b>
+                        </caption>
+                        <tbody><tr><td>お一人様最低一品の注文をお願い致します。<br>食べ残しのお持ち帰りは禁止させて頂いております。<br>ここでは撮影はお控え下さい。</td></tr>
+                        </tbody>
+                    </table>
+                </p>
+                <h2>リンク集（中国語）</h2>・<a href="http://news.baidu.com/" target="_blank">百度新聞</a>：中国版yahooニュース？<br><!-- ・<a href="http://www.people.com.cn/" target="_blank">人民日報</a>：中国共産党中央委員会の機関紙<br>  -->・<a href="http://m.xinhuanet.com/" target="_blank">新華社通信（スマホ版）</a>：中国の国営ニュースメディア<br>・<a href="http://www.chubun.com/" target="_blank">中文導報</a>：在日中国人のための情報新聞のサイト。<br>
+            </div>
+        <br>
+        <hr>
+        開発者：藤田 より道　
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdY0bD-H94xJ5oZ9loz2oxw-MFvB6s2debPXWmc5GwacQu0kg/viewform?usp=sf_link" target="f_contact">コンタクト</a><br>
+        © broaderworld.jp.<br>
+    </div>
+
+</body></html>
